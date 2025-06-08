@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    width: 100%;
+    align-items: center;
+    background-color: #121212;
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 55px;
+}
+
+nav .leftdiv {
+    width: 20%;
+    color: white;
+}
+
+nav .middiv {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+nav .middiv a:hover{
+    color: #ff004f;
+}
+
+
+nav .middiv a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px 0 30px;
+    font-size: 20px;
+}
+
+nav .rightdiv {
+    width: 20%;
+}
+
+.herodiv {
+    background-image: url(messi2.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffeb01;
+
+}
+
+.herodiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.heroleftdiv {
+    width: 50%;
+}
+
+.herorightdiv {
+    width: 50%;
+    font-family: 'League Spartan	', sans-serif;
+    text-align: center;
+    padding-top: 250px;
+    padding-right: 30px;
+}
+
+.herorightdiv h1 {
+    font-size: 50px;
+    text-shadow: 3px 3px 8px rgba(255, 255, 100, 0.6);
+}
+
+.biographydivleft,
+.herorightdiv,
+.timelinesection p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.biographydiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 467px;
+}
+
+.biographydivleft {
+    width: 50%;
+    background-color: #0c0c18;
+    color: white;
+}
+
+.biographydivleft h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 118px;
+    text-align: center;
+}
+
+.biographydivleft p {
+    margin: 10px 50px 30px 50px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.biographydivright {
+    width: 50%;
+}
+
+.biographydivright img {
+    width: 100%;
+}
+.careersection{
+    background-color: #0c0c18;
+    color: white;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.careerheading{
+    font-size: 28px;
+    padding: 30px 0px 30px 0px;
+    height: 10%;
+}
+.wrappercontainercareer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.wrappercontainercareer .item{
+    min-width: 50%;
+    line-height: 100%;
+    height: 100%;
+    background-color: white;
+}
+.careerimage{
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+}
+.quotesection {
+    background-color: #0c0c18;
+    color: white;
+    text-align: center;
+    height: 400px;
+}
+.quotewrapper{
+    margin: 0px 70px 0px 70px;
+}
+.quotediv {
+    background-color: #0c0c18;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.quotediv div:hover{
+    background: #ff004f;
+    transform: translateY(-7px);
+    transition-duration: 0.3s;
+}
+.quoteheading {
+    font-size: 40px;
+    padding: 30px 0px 30px 0px;
+}
+.quotedivleft, .quotedivmid, .quotedivright{
+    width: 33.33%;
+    background-color: #262626;
+    border-radius: 18px;
+    height: 250px;
+}
+.quotedivmid{
+    margin: 0px 50px 0px 50px;
+}
+.quotep{
+    padding: 60px 20px 30px 20px;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+}
+.ownerp{
+    float: right;
+    padding-right: 20px;
+}
+.wrappercontactme{
+    width: 100%;
+    background-color: #0c0c18;
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+}
+.wleftdiv{
+    width: 40%;
+    padding: 50px;
+    font-family: 'Lora', serif;
+
+}
+.wrightdiv{
+    width: 60%;
+}
+.wleftdiv .contactmeheading{
+    color: white;
+    font-size: 40px;
+    padding: 60px 0px 40px 0px;
+    margin: 0 0 0 150px;
+}
+.wleftdiv p{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    margin: 0 0 0 150px;
+}
+
+input, textarea{
+    width: 75%;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: #262626;
+    color: white;
+    font-size: 15px;
+    font-family: 'oswald',sans-serif;
+}
+.wrightdiv form{
+    padding: 40px 0 0 0px;
+}
+.wrightdiv button{
+    background-color: #ff004f;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.red{
+    color: Red;
+}
+.nav .leftdiv{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
